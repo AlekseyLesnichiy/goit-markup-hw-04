@@ -584,6 +584,7 @@ p {
   padding-bottom: 200px;
   background-image: url(/images/hero.jpg);
   background-repeat: no-repeat;
+  background-size: 1600px auto;
 }
 .section {
   padding-top: 94px;
