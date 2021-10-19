@@ -56,14 +56,14 @@ p {
 .mail .icon {
   width: 16px;
   height: 12px;
-  fill: var(--icon-color);
-  border: 1px solid teal;
+  fill: currentColor;
+  margin-right: 10px;
 }
 .mail .icon-phone {
   width: 10px;
   height: 16px;
-  fill: var(--icon-color);
-  border: 1px solid teal;
+  fill: currentColor;
+  margin-right: 10px;
 }
 .navigate {
   display: flex;
@@ -248,11 +248,11 @@ p {
   background-color: var(--white-color);
 }
 
+.team-container {
+  padding: 30px 32px;
+}
 .social-list-team {
   display: flex;
-  margin-bottom: 30px;
-  margin-right: 32px;
-  margin-left: 32px;
 }
 .subject:not(:last-child) {
   margin-right: 10px;
@@ -260,14 +260,28 @@ p {
 .social-icon-team {
   width: 20px;
   height: 20px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
-.social-icon-team:hover {
+.circle-team {
+  display: block;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  color: var(--icon-color);
+  height: 44px;
+  width: 44px;
+  padding: 12px;
+}
+.circle-team:hover,
+.circle-team:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+/* .social-icon-team:hover {
   fill: var(--white-color);
 }
 .social-icon-team:focus {
   fill: var(--white-color);
-}
+} */
 .samples-list .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -287,7 +301,6 @@ p {
   line-height: 1.1666;
 }
 .title-team-subject {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -305,7 +318,8 @@ p {
   font-size: 16px;
   line-height: 1.1875;
 }
-/* Section Clients */
+/*!!!!!!!!!!! Section Clients!!!!!!!!!! */
+
 .section.clients .list {
   display: flex;
 }
@@ -315,20 +329,9 @@ p {
 .clients .logo-icon {
   width: 106px;
   height: 60px;
-  fill: var(--icon-color);
+  fill: currentColor;
 }
-/* margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px; */
-.logo-icon:hover {
-  fill: var(--accent-color);
-}
-.logo-icon:focus {
-  fill: var(--accent-color);
-}
+
 .clients .title {
   margin-bottom: 50px;
 
@@ -339,6 +342,7 @@ p {
 
   color: var(--title-text-color);
 }
+
 .rectangle {
   display: block;
   width: 170px;
@@ -349,7 +353,14 @@ p {
   padding-bottom: 16px;
   padding-right: 32px;
   padding-left: 32px;
+  color: var(--icon-color);
 }
+.rectangle:hover,
+.rectangle:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 /* Footer */
 .container.footer {
   display: flex;
@@ -361,16 +372,16 @@ p {
   display: block;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
   height: 44px;
   width: 44px;
   padding: 12px;
 }
-.circle:hover {
-  background-color: var(--accent-color);
-}
+.circle:hover,
 .circle:focus {
   background-color: var(--accent-color);
 }
+
 .social-list .item:not(:last-child) {
   margin-right: 10px;
 }
@@ -381,7 +392,7 @@ p {
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: var(--white-color);
+  fill: currentColor;
 }
 .footer-join {
   margin-bottom: 20px;
@@ -582,7 +593,7 @@ p {
 .section.hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(to right, #2f303a, rgba(47, 48, 58, 0.4));
   background-image: url(/images/hero.jpg);
   background-repeat: no-repeat;
   background-size: 1600px 600px;
